@@ -13,8 +13,20 @@ Grandes telas: acima de 1200px
 @media print {
     body{
         background-image: url(../imagens/back-print.jpg);
+    }
+
+    main h1 {
         text-shadow: none;
-        color: black
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
     }
 
     img#print {
